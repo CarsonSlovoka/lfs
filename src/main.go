@@ -1,3 +1,8 @@
+/*
+go run main.go -action=split -src="xxx.exe" -chunkSize=5000000
+go run main.go -action=merge -src="./output/" -maxIdx=10
+*/
+
 package main
 
 import (

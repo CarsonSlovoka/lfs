@@ -13,7 +13,9 @@ Large File Storage (LFS)
 ## build
 
 ```
-go build -ldflags "-s -w"
+git clone -o https://github.com/CarsonSlovoka/lfs.git
+cd lfs/src
+go build -ldflags "-s -w" -o lfs.exe
 ```
 
 ## USAGE
@@ -21,14 +23,14 @@ go build -ldflags "-s -w"
 - for split
 
 ```yaml
-go run main.go -action=split -src="xxx.exe"
-go run main.go -action=split -src="xxx.exe" -chunkSize=5000000   # 5MB
+lfs.exe -action=split -src="xxx.exe"
+lfs.exe -action=split -src="xxx.exe" -chunkSize=5000000   # 5MB
 ```
 
 for merge
 
 ```yaml
-go run main.go -action=merge -src="C://xxx/dir"
-go run main.go -action=merge -src="C://xxx/dir" -maxIdx=10 # 最多可以處理到文件編號 10.lfs
-go run main.go -action=merge -src="./output/" -maxIdx=10
+lfs.exe -action=merge -src="C://xxx/dir"
+lfs.exe -action=merge -src="C://xxx/dir" -maxIdx=10 # 最多可以處理到文件編號 10.lfs
+lfs.exe -action=merge -src="./output/" -maxIdx=10
 ```

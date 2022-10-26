@@ -40,3 +40,5 @@ lfs.exe -action=merge -src="C://xxx/dir"
 lfs.exe -action=merge -src="C://xxx/dir" -maxIdx=10 # 最多可以處理到文件編號 10.lfs
 lfs.exe -action=merge -src="./output/" -maxIdx=10
 ```
+
+> [🚀lfs實用的bat參考](tool)
